@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Portfolio Web</title>
+    <meta name="description" content="Your NameのポートフォリオWebサイトです。プロフィール掲載・制作してきた作品の紹介などをしています。">
+
+    <meta property="og:title" content="Your Name Portfolio Site">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="#">
+    <meta property="og:image" content="images/meta/ogimage.png">
+    <meta property="og:site_name" content="Your Name Portfolio Site">
+    <meta property="og:description" content="Your Name のPortfolio Siteです。">
+
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="apple-touch-icon" href="images/meta/apple-touch-icon.png">
+    <link rel="icon" href="images/meta/icon.png">
+    <link rel="shortcut icon" href="images/meta/favicon.ico">
+    
+     <!-- Open SansのフォントはGoogle fontsから-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css"> 
+    <!-- CSSを指定する。reset.cssはcssの一番上！（ブラウザ独自のCSSのみを打ち消すため）-->
+    <link rel="stylesheet" href="css/style.css"> 
+
+</head>
+
+<body>
+
+    <!-- hero-image -->
+    <div class="hero-image">
+        <img src="images/4.jpg" alt="繋がっている画像">
+        <p class="hero-image__text">MJ's Profile</p>
+    </div>
+    <!-- //hero-image -->
+
+    <header class="header">
+        <div class="wrapper header-wrapper">
+            <h1 class="site-title">MJ's Profile</h1> <!-- Webサイト全体の見出し＝h1 -->
+            <!-- Classは複数指定できる-->
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#about">About me</a></li> <!--ページ内移動のリンク; section idを付けたところに飛ぶ-->
+                    <li class="nav-item"><a href="#works">Works</a></li>
+                    <li class="nav-item"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!--
+        <div class="Landing_heroButtons_22I0X">
+            <button class="w-text-body-3 Button_host_2nFup Button_primary_19LMN Button_big_36arF">Start meeting</button>
+            <a href="/login" class="Link_host_18QoP w-text-body-3 Button_host_2nFup Button_text_33rBc Button_big_36arF">Log in</a>
+            <p>あいうえお</p>
+        </div>
+        -->
+        
+
+        <section id="about" class="profile">
+            <div class="profile-wrapper">
+                <!--ここの余白は親要素と子要素の間なのでpaddingを使う-->
+                <h2 class="text-center profile__title">About me</h2> <!--セクションの見出しはh2以下が基本-->
+                <div class="text-center profile__eyecatch"><img src="images/selfie/2.JPG" alt="プロフィール画像"></div>
+                <h3 class="text-center profile__name">宮之原 遵（Miyanohara, Jun）</h3>
+                <ul class="sample1">
+                    <li>みやじゅんです！</li>
+                    <p class="just-text">またはMJ。</p>
+                    <li>薬を創る研究しています！</li>
+                    <p class="just-text">病気，ヘルスケアへの貢献に興味あり！</p>
+                    <li>人生史上最大（？）の繁忙期！</li>
+                    <p class="just-text">新居に引っ越し，，，子どもうまれる，，，</p>
+                    <li>本当は飲み会，交流大好き！</li>
+                    <p class="just-text">落ち着いたら皆さん遊びましょう！！</p>
+
+                </ul>
+                
+                <!--
+                <p class="profile__text">チーズアカデミーは、チーズ職人養成学校です。
+                    チーズの素晴らしさを、自給自足を通じて、できるだけ多くの人に知っていただきたい。
+                    そして、食卓にはいつもチーズがあった、あの頃の当たり前をこの手で取り戻したい。
+                    そんな思いから、チーズ職人養成学校「チーズアカデミーTOKYO」は歩みを始めています。
+                    卒業後、チーズ自給自足のバックアップはもちろんのこと、
+                    チーズ職人への就職・転職もサポートします。</p>
+                    -->
+               
+                 <!--<a href="#" target="_blank">別タブでもっと見る</a> --> <!-- target属性で_blankにより別タブ表示-->
+                 <div class="more">
+                    <a href="#">もっと見る！</a>
+                </div>
+                </div>
+
+        </section>
+
+        <section id="works" class="works">
+            <div class="wrapper">
+                <h2 class="works__title text-center">Works</h2> <!--セクションの見出しはh2以下が基本-->
+                <div class="work-image">
+                    <img src="images/1.jpg" alt="運動している画像" class="works__header">
+                    <div class= "work-image__text"> 
+                        <div class="koe">
+                            <p>G’sで何つくるか<br>決まってないけどどないしよ。。</p>
+                        </div>
+                    </div>
+                    <div class= "work-image__text2">
+                        <p>※画像は本人では<br>ありません。</p>
+                    </div>
+
+                </div>
+               
+                <ul class="works__list">
+                    <li class="works__item">
+                        <div class="works__eyecatch">
+                            <img src="images/works/work1.jpg" alt="">
+                        </div>
+                        <div class="works__contents"> 
+                            <h3 class="works__heading">まあでも走るの好きだから</h3>
+                            <p>2022/3/19</p>
+                        </div>
+                    </li>
+                    <li class="works__item">
+                        <div class="works__eyecatch">
+                            <img src="images/works/work2.jpg" alt="">
+                        </div>
+                        <div class="works__contents"> 
+                            <h3 class="works__heading">運動系のアプリかなあ</h3>
+                            <p>2022/3/26</p>
+                        </div>
+                    </li>
+                    <li class="works__item">
+                        <div class="works__eyecatch">
+                            <img src="images/works/work3.jpg" alt="">
+                        </div>
+                        <div class="works__contents"> 
+                            <h3 class="works__heading">迷える子羊よ今こそ立ち上がれ！<Br>（パジャマなう）</h3>
+                            <p>2022/4/2</p>
+                        </div>
+                    </li>
+                </ul>
+                <a href="#" target="_blank" class="btn text-center">別タブでもっと見る</a> 
+                <!-- target属性で_blankにより別タブ表示-->
+            </div>  
+        </section>
+     <!--
+        <section>
+            <h2>MJの夢</h2>
+            <div class="history-outer">
+                <ul>
+                    <li>旅人</li>
+                    <li>旅人</li>
+                    <li>旅人</li>
+                </ul>
+            </div>
+            <p>後で教えます</p>
+        </section>
+
+        <section>
+            <h2>NEWS</h2>
+     
+            
+            <p>後で教えます</p>
+        </section>
+
+        <section>
+            <h2>ACCESS</h2>
+           
+            
+            <p>後で教えます</p>
+        </section>
+-->
+        <section id="contact" class="contact">
+            <div class="form-wrapper">
+                <h2 class="contact__title text-center">CONTACT</h2>
+                <form action="#" method="post">
+                    <dl class="form-inner">
+                        <dt class="form-title">お名前</dt>
+                        <dd class="form-item"><input type="text" name="name" id="name" class="form-parts"></dd> <!-- 一行入力フォーム-->
+                        <dt class="form-title">メールアドレス</dt>
+                        <dd class="form-item"><input type="email" name="email" id="email" class="form-parts"></dd> <!--e-mail入力を前提とした一行入力フォーム--> 
+                        <dt class="form-title check-radio">お問い合わせ内容</dt>
+                        <dd class="form-item">
+                            <label for="making" class="form-label"><input type="radio" name="kind" id="making" value="制作のご依頼">制作のご依頼</label>
+                            <label for="event" class="form-label"><input type="radio" name="kind" id="event" value="イベント出演依頼">イベント出演依頼</label>
+                            <label for="other" class="form-label"><input type="radio" name="kind" id="other" value="その他">その他</label>
+                            <!--labelで，項目をボタン替わりにできる--> 
+                        </dd>
+                        <dt class="form-title">お問い合わせ詳細</dt>
+                        <dd class="form-item">
+                            <textarea name="detail" id="detail" cols="30" rows="10" class="form-parts"></textarea> <!-- 1行何文字まで，何行までか選択できる-->                      
+                        </dd>
+                    </dl>
+                    <input type="submit" value="送信" class="btn btn-submit">
+                </form>
+            </div>   
+
+        </section>
+    </main>
+
+    <footer class="footer text-center">
+        <small class="copyrights">copyrights 2022 MovLiv All Rights Reserved.</small>
+        
+    </footer>
+
+  
+
+</body>
+</html>
